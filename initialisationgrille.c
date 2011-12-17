@@ -9,19 +9,15 @@
 /* Initialisation du tableau toutes les cases prennent la valeur 0*/
 void initialisationGrille () {
 
-  char** grille=NULL;
+  char** grille;
   int i,j;
- grille=malloc(ROW * sizeof(int));
-  for (i=0; i<COL; i++) {
-   grille[i]=malloc(COL * sizeof(int));
-  }
+
 
     for(i=0;i<ROW;i++)
         {
 	  for(j=0;j<ROW;j++)
           {
-            grille[i][j]=' ';
+            grille[i][j]=0;
           }
         }
-
 }

@@ -34,5 +34,7 @@ int main () {
   choix_j(j1);
 
   afficheGrille();
+
+  free(grille);
     return 0;
 }

@@ -1,11 +1,15 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#define ROW 6
+#define COL 7
+
 void choix_j (char j[15]) {
   
   int choix_col;
   int i;
   char** grille=NULL;
+ 
   grille=malloc(ROW * sizeof(int));
   for (i=0; i<COL; i++) {
     grille[i]=malloc(COL * sizeof(int));

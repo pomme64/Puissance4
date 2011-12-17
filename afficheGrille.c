@@ -7,11 +7,7 @@
 void afficheGrille () {
   
   int i,j;
-  char** grille=NULL;
- grille=malloc(ROW * sizeof(int));
-  for (i=0; i<COL; i++) {
-   grille[i]=malloc(COL * sizeof(int));
-  }
+  char** grille;
 
   
   printf("\t\t  0   1   2   3   4   5   6\n");
@@ -29,5 +25,4 @@ void afficheGrille () {
 
   printf("\t\t|---|---|---|---|---|---|---|\n");
   printf("\t\t  0   1   2   3   4   5   6\n");
-
 }
