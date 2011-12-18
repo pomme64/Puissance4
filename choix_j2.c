@@ -4,7 +4,7 @@
 #define ROW 6
 #define COL 7
 
-int choix_j1 (char j[15], char** grille,int hc0, int hc1,int hc2, int hc3, int hc4, int hc5, int hc6 ) {
+int choix_j2 (char j[15], char** grille,int hc0,int hc1,int hc2, int hc3, int hc4, int hc5, int hc6) {
   
   int choix_col;
   int i;
@@ -18,31 +18,28 @@ int choix_j1 (char j[15], char** grille,int hc0, int hc1,int hc2, int hc3, int h
       scanf("%d", &choix_col);
     }while(choix_col<0 || choix_col>7);
   }
-
   switch (choix_col) {
   case 0:
-    grille[hc0][choix_col]='X';
+    grille[hc0][choix_col]='O';
     break;
   case 1:
-    grille[hc1][choix_col]='X';
+    grille[hc1][choix_col]='O';
     break;
   case 2:
-    grille[hc2][choix_col]='X';
+    grille[hc2][choix_col]='O';
     break;
   case 3:
-    grille[hc3][choix_col]='X';
+    grille[hc3][choix_col]='O';
     break;
   case 4:
-    grille[hc4][choix_col]='X';
+    grille[hc4][choix_col]='O';
     break;
    case 5:
-    grille[hc5][choix_col]='X';
+    grille[hc5][choix_col]='O';
     break;
   case 6:
-    grille[hc6][choix_col]='X';
+    grille[hc6][choix_col]='O';
     break;
  }
-
   return(choix_col);
-
 }
