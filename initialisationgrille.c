@@ -7,17 +7,16 @@
 
 
 /* Initialisation du tableau toutes les cases prennent la valeur 0*/
-void initialisationGrille () {
+void initialisationGrille (char** grille) {
 
-  char** grille;
   int i,j;
 
 
-    for(i=0;i<ROW;i++)
+    for(i=0;i<=ROW;i++)
         {
-	  for(j=0;j<ROW;j++)
+	  for(j=0;j<=ROW;j++)
           {
-            grille[i][j]=0;
+            grille[i][j]=' ';
           }
         }
 }
