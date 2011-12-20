@@ -110,7 +110,7 @@ int check(char** grille, int j, int k)
     }
   }
   
-  if((j>=1) && (j<=3) && (k>=2) && (k<=5)) {		    
+  if((j>0) && (j<=3) && (k>1) && (k<=5)) {		    
     if((grille[j][k]=='X') && (grille[j-1][k+1]=='X') && (grille[j+1][k-1]=='X') && (grille[j+2][k-2]=='X')) {
       return 1;
     }

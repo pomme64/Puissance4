@@ -61,5 +61,7 @@ int main () {
     break;
   } 
   free(grille);
+  free(j1);
+  free(j2);
   return 0;
 }
