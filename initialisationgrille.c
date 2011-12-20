@@ -5,8 +5,15 @@
 #define ROW 6
 #define COL 7
 
+/**
+ *It's the function who initialize the cellule of table to a space.
+ 
+ * \brief : Initialisation of table
+ * @method grille: It's the table of game.
+ * @param i : It represent the line of the table.
+ * @param j : It represent the column of the table.
+ */
 
-/* Initialisation du tableau toutes les cases prennent la valeur 0*/
 void initialisationGrille (char** grille) {
 
   int i,j;

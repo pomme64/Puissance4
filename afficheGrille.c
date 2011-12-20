@@ -4,6 +4,15 @@
 #define COL 7
 #define ROW 6
 
+/**
+ * This function prints the table of game and his values.
+
+ * \brief : It's a print of table of game.
+ * @method grille : It's the table of game.
+ * @param i : It represents the line of the table.
+ * @param j : It represents the column of the table.
+ */
+
 void afficheGrille (char** grille) {
   
   int i,j;
